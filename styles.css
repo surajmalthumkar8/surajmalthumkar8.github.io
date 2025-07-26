@@ -1,0 +1,173 @@
+/* Custom CSS for Fitness Coach Website */
+
+/* Smooth scrolling for the entire page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Remove default margins and set font */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply fade-in animation to sections */
+section {
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* Navigation link hover effect */
+nav a {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #3B82F6;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Card hover effects */
+.hover\:shadow-xl {
+    transition: all 0.3s ease;
+}
+
+/* Form input focus styles */
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #3B82F6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Loading spinner for form submission */
+.spinner {
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3B82F6;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Testimonial card styles */
+#testimonials .bg-gray-100 {
+    position: relative;
+    overflow: hidden;
+}
+
+#testimonials .bg-gray-100::before {
+    content: '"';
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    font-size: 100px;
+    color: rgba(59, 130, 246, 0.1);
+    font-family: Georgia, serif;
+}
+
+/* Service card icon hover effect */
+#services i {
+    transition: transform 0.3s ease;
+}
+
+#services .hover\:shadow-xl:hover i {
+    transform: scale(1.1);
+}
+
+/* Mobile menu animation */
+#mobile-menu {
+    transition: all 0.3s ease;
+}
+
+/* Hero section background pattern */
+#home {
+    position: relative;
+    overflow: hidden;
+}
+
+#home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(59, 130, 246, 0.05) 0%, transparent 50%);
+    z-index: 1;
+}
+
+#home > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Transformation image hover effect */
+#transformations img {
+    transition: transform 0.3s ease;
+}
+
+#transformations .hover\:shadow-2xl:hover img {
+    transform: scale(1.05);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .text-4xl {
+        font-size: 2rem;
+    }
+    
+    .text-6xl {
+        font-size: 3rem;
+    }
+}
