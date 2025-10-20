@@ -3,31 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarnjeet Doe - Fitness Coach | Transform Your Life</title>
-    
+    <title>Suraj Malthumkar - Full Stack Cloud Engineer | AI & Data Science Expert</title>
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
-    
+
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="font-inter">
     <!-- Navigation Bar -->
-    <nav class="fixed top-0 w-full bg-gray-900 text-white z-50 shadow-lg">
+    <nav class="fixed top-0 w-full bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900 text-white z-50 shadow-2xl backdrop-blur-sm bg-opacity-95">
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center py-4">
-                <div class="text-2xl font-bold">FitCoach</div>
+                <div class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">SM</div>
                 <!-- Desktop Menu -->
-                <div class="hidden md:flex space-x-6">
-                    <a href="#home" class="hover:text-blue-400 transition">Home</a>
-                    <a href="#about" class="hover:text-blue-400 transition">About</a>
-                    <a href="#services" class="hover:text-blue-400 transition">Services</a>
-                    <a href="#transformations" class="hover:text-blue-400 transition">Transformations</a>
-                    <a href="#testimonials" class="hover:text-blue-400 transition">Testimonials</a>
-                    <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link hover:text-blue-400 transition-all duration-300">Home</a>
+                    <a href="#about" class="nav-link hover:text-blue-400 transition-all duration-300">About</a>
+                    <a href="#skills" class="nav-link hover:text-blue-400 transition-all duration-300">Skills</a>
+                    <a href="#experience" class="nav-link hover:text-blue-400 transition-all duration-300">Experience</a>
+                    <a href="#projects" class="nav-link hover:text-blue-400 transition-all duration-300">Projects</a>
+                    <a href="#education" class="nav-link hover:text-blue-400 transition-all duration-300">Education</a>
+                    <a href="#contact" class="nav-link hover:text-blue-400 transition-all duration-300">Contact</a>
                 </div>
                 <!-- Mobile Menu Button -->
                 <button id="mobile-menu-btn" class="md:hidden">
@@ -36,62 +42,96 @@
             </div>
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="hidden md:hidden pb-4">
-                <a href="#home" class="block py-2 hover:text-blue-400">Home</a>
-                <a href="#about" class="block py-2 hover:text-blue-400">About</a>
-                <a href="#services" class="block py-2 hover:text-blue-400">Services</a>
-                <a href="#transformations" class="block py-2 hover:text-blue-400">Transformations</a>
-                <a href="#testimonials" class="block py-2 hover:text-blue-400">Testimonials</a>
-                <a href="#contact" class="block py-2 hover:text-blue-400">Contact</a>
+                <a href="#home" class="block py-2 hover:text-blue-400 transition">Home</a>
+                <a href="#about" class="block py-2 hover:text-blue-400 transition">About</a>
+                <a href="#skills" class="block py-2 hover:text-blue-400 transition">Skills</a>
+                <a href="#experience" class="block py-2 hover:text-blue-400 transition">Experience</a>
+                <a href="#projects" class="block py-2 hover:text-blue-400 transition">Projects</a>
+                <a href="#education" class="block py-2 hover:text-blue-400 transition">Education</a>
+                <a href="#contact" class="block py-2 hover:text-blue-400 transition">Contact</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="pt-16 min-h-screen flex items-center bg-gradient-to-br from-gray-900 to-gray-700 text-white">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
-                    <h1 class="text-4xl md:text-6xl font-bold mb-4">Transform Your Body,<br>Transform Your Life</h1>
-                    <p class="text-xl mb-8">Get personalized fitness coaching and achieve your dream physique</p>
-                    <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg transition transform hover:scale-105 inline-block">
-                        Start Your Journey Today
+    <section id="home" class="pt-20 min-h-screen flex items-center bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="flex flex-col items-center text-center">
+                <div class="mb-8 animate-float">
+                    <div class="w-48 h-48 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1 shadow-2xl">
+                        <img src="images/profile.jpg" alt="Suraj Malthumkar" class="w-full h-full rounded-full object-cover border-4 border-gray-900">
+                    </div>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold mb-4 animate-fade-in-up">
+                    <span class="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+                        Suraj Malthumkar
+                    </span>
+                </h1>
+                <div class="text-2xl md:text-3xl mb-6 text-gray-300 animate-fade-in-up animation-delay-200">
+                    <span class="typing-text">Full Stack Cloud Engineer</span>
+                </div>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl text-gray-400 animate-fade-in-up animation-delay-400">
+                    AI & Data Science Specialist | AWS Certified | 5+ Years Experience
+                </p>
+                <div class="flex flex-wrap gap-4 mb-8 animate-fade-in-up animation-delay-600">
+                    <a href="mailto:surajmalthumkar8@gmail.com" class="social-btn bg-blue-600 hover:bg-blue-700">
+                        <i class="fas fa-envelope mr-2"></i> Email
+                    </a>
+                    <a href="https://www.linkedin.com/in/surajmalthumkar8" target="_blank" class="social-btn bg-blue-700 hover:bg-blue-800">
+                        <i class="fab fa-linkedin mr-2"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/surajmalthumkar8" target="_blank" class="social-btn bg-gray-800 hover:bg-gray-900">
+                        <i class="fab fa-github mr-2"></i> GitHub
+                    </a>
+                    <a href="tel:9281458741" class="social-btn bg-green-600 hover:bg-green-700">
+                        <i class="fas fa-phone mr-2"></i> Call
                     </a>
                 </div>
-                <div class="md:w-1/2">
-                    <img src="images/hero-coach.jpg" alt="Fitness Coach" class="rounded-lg shadow-2xl mx-auto">
-                </div>
+                <a href="#contact" class="cta-button animate-fade-in-up animation-delay-800">
+                    <span>Let's Connect</span>
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
             </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="#about">
+                <i class="fas fa-chevron-down text-3xl text-white opacity-50 hover:opacity-100 transition"></i>
+            </a>
         </div>
     </section>
 
     <!-- About Me Section -->
-    <section id="about" class="py-20 bg-gray-100">
+    <section id="about" class="py-20 bg-white">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-12">About Me</h2>
-            <div class="flex flex-col md:flex-row items-center max-w-4xl mx-auto">
-                <div class="md:w-1/3 mb-8 md:mb-0">
-                    <img src="images/profile.jpg" alt="Coach Profile" class="rounded-full mx-auto shadow-lg">
-                </div>
-                <div class="md:w-2/3 md:pl-12">
-                    <h3 class="text-2xl font-bold mb-4">Tarnjeet Singh - Certified Fitness Coach and Personal Trainer</h3>
-                    <p class="text-gray-700 mb-4">
-                        With over 10 years of experience in fitness coaching, I've helped hundreds of clients achieve their fitness goals. My approach combines personalized workout plans, nutrition guidance, and continuous motivation.
+            <h2 class="section-title">About Me</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 md:p-12 shadow-xl">
+                    <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                        I'm an experienced <strong>Full Stack Cloud Engineer</strong> with over 5 years of expertise in software development and Data Science. I specialize in building scalable cloud solutions using <strong>Python, Scala, Java, and JavaScript</strong>, with deep knowledge of <strong>AWS cloud technologies</strong>.
                     </p>
-                    <p class="text-gray-700">
-                        I believe that fitness is not just about physical transformation, but about building a sustainable, healthy lifestyle that empowers you in all areas of life.
+                    <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                        Currently working as a <strong>Senior Tech Lead in AI & ML</strong> at Ernst & Young (EY), I develop cutting-edge AI-driven solutions for automated testing and GRC incident classification. Previously, I worked as a <strong>Software Development Engineer at Amazon</strong> on AWS GuardDuty, where I built secure data pipelines and microservices that processed millions of security events.
                     </p>
-                    <div class="mt-6 flex flex-wrap gap-4">
-                        <div class="flex items-center">
-                            <i class="fas fa-certificate text-blue-600 mr-2"></i>
-                            <span>NASM Certified</span>
+                    <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                        I hold a <strong>Master's degree in Computer Science and Data Engineering</strong> from Northeastern University and am certified as an <strong>AWS Developer</strong>. My passion lies in leveraging AI, machine learning, and cloud technologies to solve complex business problems and create impactful solutions.
+                    </p>
+                    <div class="flex flex-wrap gap-4 mt-8">
+                        <div class="stat-card">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Years Experience</div>
                         </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-users text-blue-600 mr-2"></i>
-                            <span>500+ Clients Transformed</span>
+                        <div class="stat-card">
+                            <div class="stat-number">4</div>
+                            <div class="stat-label">Major Companies</div>
                         </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-clock text-blue-600 mr-2"></i>
-                            <span>10+ Years Experience</span>
+                        <div class="stat-card">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">GitHub Projects</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">3</div>
+                            <div class="stat-label">Certifications</div>
                         </div>
                     </div>
                 </div>
@@ -99,206 +139,475 @@
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-20 bg-white">
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-12">Services Offered</h2>
-            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                <!-- Service Card 1 -->
-                <div class="bg-gray-100 rounded-lg p-8 text-center hover:shadow-xl transition transform hover:-translate-y-2">
-                    <i class="fas fa-weight text-5xl text-blue-600 mb-4"></i>
-                    <h3 class="text-2xl font-bold mb-4">Weight Loss Program</h3>
-                    <p class="text-gray-700 mb-4">Customized weight loss plans with proven results. Lose weight sustainably and keep it off.</p>
-                    <ul class="text-left text-gray-600 mb-6">
-                        <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i>Personalized workout plans</li>
-                        <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i>Weekly progress tracking</li>
-                        <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i>24/7 support</li>
-                    </ul>
-                    <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition">
-                        Learn More
-                    </button>
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="max-w-6xl mx-auto">
+                <!-- Programming Languages -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <i class="fas fa-code text-blue-600 mr-2"></i>
+                        Programming Languages
+                    </h3>
+                    <div class="skill-grid">
+                        <div class="skill-badge">Python</div>
+                        <div class="skill-badge">Java</div>
+                        <div class="skill-badge">Scala</div>
+                        <div class="skill-badge">JavaScript</div>
+                        <div class="skill-badge">TypeScript</div>
+                        <div class="skill-badge">SQL</div>
+                        <div class="skill-badge">C++</div>
+                    </div>
                 </div>
 
-                <!-- Service Card 2 -->
-                <div class="bg-gray-100 rounded-lg p-8 text-center hover:shadow-xl transition transform hover:-translate-y-2">
-                    <i class="fas fa-apple-alt text-5xl text-blue-600 mb-4"></i>
-                    <h3 class="text-2xl font-bold mb-4">Nutrition Planning</h3>
-                    <p class="text-gray-700 mb-4">Get a customized diet plan that fits your lifestyle and helps you reach your goals faster.</p>
-                    <ul class="text-left text-gray-600 mb-6">
-                        <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i>Macro-based meal plans</li>
-                        <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i>Recipe suggestions</li>
-                        <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i>Supplement guidance</li>
-                    </ul>
-                    <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition">
-                        Learn More
-                    </button>
+                <!-- Cloud & DevOps -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <i class="fas fa-cloud text-blue-600 mr-2"></i>
+                        Cloud & DevOps
+                    </h3>
+                    <div class="skill-grid">
+                        <div class="skill-badge">AWS (EC2, S3, Lambda, EKS, EMR, Glue)</div>
+                        <div class="skill-badge">Azure</div>
+                        <div class="skill-badge">Docker</div>
+                        <div class="skill-badge">Kubernetes</div>
+                        <div class="skill-badge">Jenkins</div>
+                        <div class="skill-badge">Apache Airflow</div>
+                        <div class="skill-badge">Terraform</div>
+                    </div>
                 </div>
 
-                <!-- Service Card 3 -->
-                <div class="bg-gray-100 rounded-lg p-8 text-center hover:shadow-xl transition transform hover:-translate-y-2">
-                    <i class="fas fa-user-friends text-5xl text-blue-600 mb-4"></i>
-                    <h3 class="text-2xl font-bold mb-4">1-on-1 Coaching</h3>
-                    <p class="text-gray-700 mb-4">Get personal attention with exclusive one-on-one training sessions tailored to your needs.</p>
-                    <ul class="text-left text-gray-600 mb-6">
-                        <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i>Personal training sessions</li>
-                        <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i>Form correction</li>
-                        <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i>Motivation & accountability</li>
-                    </ul>
-                    <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition">
-                        Learn More
-                    </button>
+                <!-- Frameworks & Libraries -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <i class="fas fa-layer-group text-blue-600 mr-2"></i>
+                        Frameworks & Libraries
+                    </h3>
+                    <div class="skill-grid">
+                        <div class="skill-badge">Spring Boot</div>
+                        <div class="skill-badge">FastAPI</div>
+                        <div class="skill-badge">React JS</div>
+                        <div class="skill-badge">Node.js</div>
+                        <div class="skill-badge">Angular JS</div>
+                        <div class="skill-badge">Apache Spark</div>
+                        <div class="skill-badge">Pandas</div>
+                        <div class="skill-badge">NumPy</div>
+                        <div class="skill-badge">Scikit-learn</div>
+                    </div>
+                </div>
+
+                <!-- Databases & Messaging -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <i class="fas fa-database text-blue-600 mr-2"></i>
+                        Databases & Messaging
+                    </h3>
+                    <div class="skill-grid">
+                        <div class="skill-badge">PostgreSQL</div>
+                        <div class="skill-badge">MySQL</div>
+                        <div class="skill-badge">MongoDB</div>
+                        <div class="skill-badge">Redis</div>
+                        <div class="skill-badge">Cassandra</div>
+                        <div class="skill-badge">Kafka</div>
+                        <div class="skill-badge">RabbitMQ</div>
+                        <div class="skill-badge">DynamoDB</div>
+                    </div>
+                </div>
+
+                <!-- AI & Machine Learning -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <i class="fas fa-brain text-blue-600 mr-2"></i>
+                        AI & Machine Learning
+                    </h3>
+                    <div class="skill-grid">
+                        <div class="skill-badge">Machine Learning</div>
+                        <div class="skill-badge">Agentic AI</div>
+                        <div class="skill-badge">Deep Learning</div>
+                        <div class="skill-badge">NLP</div>
+                        <div class="skill-badge">Time Series Forecasting</div>
+                        <div class="skill-badge">TensorFlow</div>
+                        <div class="skill-badge">PyTorch</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Transformations Section -->
-    <section id="transformations" class="py-20 bg-gray-100">
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-white">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-12">Client Transformations</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <!-- Transformation 1 -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition">
-                    <img src="images/transformations/transform-1.jpg" alt="Transformation 1" class="w-full">
-                    <div class="p-4">
-                        <h4 class="font-bold text-lg mb-2">Suraj M. - Lost 69 lbs</h4>
-                        <p class="text-gray-600">12 weeks transformation</p>
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="max-w-5xl mx-auto">
+                <div class="timeline">
+                    <!-- EY -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">June 2025 - Present</div>
+                            <h3 class="timeline-title">Senior Tech Lead - AI & ML Team</h3>
+                            <h4 class="timeline-company">Ernst & Young (EY) - Hyderabad, India</h4>
+                            <ul class="timeline-description">
+                                <li>Developing AI-driven solution for automated unit test case generation using Agentic AI and prompt engineering</li>
+                                <li>Building GRC Incident Classification & Similarity Model for enterprise risk management</li>
+                                <li>Improving runtime success rate of time series forecasting deep learning models in Azure AutoML</li>
+                            </ul>
+                            <div class="tech-tags">
+                                <span>Python</span>
+                                <span>Agentic AI</span>
+                                <span>Azure AutoML</span>
+                                <span>Data Curation</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Transformation 2 -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition">
-                    <img src="images/transformations/transform-2.jpg" alt="Transformation 2" class="w-full">
-                    <div class="p-4">
-                        <h4 class="font-bold text-lg mb-2">Suraj Again - lost 15 lbs muscle</h4>
-                        <p class="text-gray-600">16 weeks transformation</p>
+                    <!-- Amazon -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">October 2022 - August 2024</div>
+                            <h3 class="timeline-title">Software Development Engineer - AWS GuardDuty</h3>
+                            <h4 class="timeline-company">Amazon.com Inc - Los Angeles, California</h4>
+                            <ul class="timeline-description">
+                                <li>Developed secure data ingestion pipeline converting Avro to Parquet for Delta Lake, achieving 30% performance improvement</li>
+                                <li>Integrated Kafka and Redis Streams for real-time event notifications and video processing across distributed systems</li>
+                                <li>Designed microservices using Java and Spring Boot, enhancing backend scalability for security pipelines</li>
+                                <li>Optimized AWS SNS notification system, reducing event processing latency by 14% and improving system efficiency by 20%</li>
+                                <li>Implemented security measures to block malicious EC2 instances, identifying 644 malicious accounts</li>
+                                <li>Built Apache Airflow pipelines and monitoring dashboards, reducing manual intervention by 90%</li>
+                            </ul>
+                            <div class="tech-tags">
+                                <span>Python</span>
+                                <span>Scala</span>
+                                <span>Java</span>
+                                <span>Spring Boot</span>
+                                <span>AWS</span>
+                                <span>Kafka</span>
+                                <span>Redis</span>
+                                <span>Delta Lake</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Transformation 3 -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition">
-                    <img src="images/transformations/transform-3.jpg" alt="Transformation 3" class="w-full">
-                    <div class="p-4">
-                        <h4 class="font-bold text-lg mb-2">Suraj little fat - gained 25 lbs</h4>
-                        <p class="text-gray-600">10 weeks transformation</p>
+                    <!-- Cloudflare -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">January 2022 - July 2022</div>
+                            <h3 class="timeline-title">Software Engineering Intern - Addressing Team</h3>
+                            <h4 class="timeline-company">Cloudflare - San Francisco, California</h4>
+                            <ul class="timeline-description">
+                                <li>Designed MongoDB schema and developed bug tracking system with Redis caching, reducing developer efforts by 80%</li>
+                                <li>Built scalable backend services using Java and Spring Boot for IP assignment workflows</li>
+                                <li>Forecasted Inbound Leads using Time Series Forecasting, increasing leads by 11% in next quarter</li>
+                                <li>Built data pipelines using Spark and Scala to streamline existing processes</li>
+                            </ul>
+                            <div class="tech-tags">
+                                <span>JavaScript (ES6)</span>
+                                <span>MongoDB</span>
+                                <span>Redis</span>
+                                <span>Java</span>
+                                <span>Spring Boot</span>
+                                <span>Spark</span>
+                                <span>Scala</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Transformation 4 -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition">
-                    <img src="images/transformations/transform-4.jpg" alt="Transformation 4" class="w-full">
-                    <div class="p-4">
-                        <h4 class="font-bold text-lg mb-2">Damn SURAJ!! - AquaMan, Rivers flowing</h4>
-                        <p class="text-gray-600">20 weeks transformation</p>
+                    <!-- Northeastern University -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">January 2021 - December 2021</div>
+                            <h3 class="timeline-title">Software Engineer RA</h3>
+                            <h4 class="timeline-company">Northeastern University - Boston, MA</h4>
+                            <ul class="timeline-description">
+                                <li>Wrote complex SQL queries for 5 million+ behavioral data records in BigQuery (GCP)</li>
+                                <li>Performed quantitative analysis for applied economics projects using Python and MySQL</li>
+                                <li>Conducted data collection, preparation, cleaning, and ad-hoc reporting for university applications</li>
+                            </ul>
+                            <div class="tech-tags">
+                                <span>Python</span>
+                                <span>SQL</span>
+                                <span>BigQuery</span>
+                                <span>GCP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Byjus -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">May 2019 - September 2020</div>
+                            <h3 class="timeline-title">Software Engineer</h3>
+                            <h4 class="timeline-company">Byjus - Hyderabad, India</h4>
+                            <ul class="timeline-description">
+                                <li>Led automation of booking system for E-learning platform with 200k daily active students and 10k teachers</li>
+                                <li>Automated booking workflows using Java, Spring Boot, and RabbitMQ, reducing costs by $50K/month</li>
+                                <li>Built multi-tenant features with strict data isolation using PostgreSQL schemas</li>
+                                <li>Reduced infrastructure costs by 50% through Redis caching and event-driven queuing</li>
+                            </ul>
+                            <div class="tech-tags">
+                                <span>Java</span>
+                                <span>Spring Boot</span>
+                                <span>RabbitMQ</span>
+                                <span>PostgreSQL</span>
+                                <span>Redis</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="py-20 bg-white">
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-12">What Clients Say-about Fatso</h2>
-            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                <!-- Testimonial 1 -->
-                <div class="bg-gray-100 rounded-lg p-6 shadow-lg">
-                    <div class="flex mb-4">
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="max-w-6xl mx-auto">
+                <div class="project-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-robot text-4xl text-blue-600 mb-4"></i>
+                            <h3 class="project-title">AI Agent Performance on Machine Learning</h3>
+                        </div>
+                        <p class="project-description">
+                            Research project analyzing the performance of AI agents on various machine learning tasks, implementing state-of-the-art algorithms and benchmarking results.
+                        </p>
+                        <div class="tech-tags mb-4">
+                            <span>Python</span>
+                            <span>Machine Learning</span>
+                            <span>AI</span>
+                        </div>
+                        <a href="https://github.com/surajmalthumkar8/AI_Agent_Performance_on_MachineLearning" target="_blank" class="project-link">
+                            <i class="fab fa-github mr-2"></i> View on GitHub
+                        </a>
                     </div>
-                    <p class="text-gray-700 mb-4 italic">"Tarnjeet completely changed my life! I've never felt stronger or more confident. His personalized approach made all the difference."</p>
-                    <div class="font-bold">- Sarah Mitchell</div>
-                    <div class="text-gray-600 text-sm">Lost 30 lbs in 3 months with Tarnjeet(fatso)</div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-database text-4xl text-purple-600 mb-4"></i>
+                            <h3 class="project-title">AWS Glue ETL Pipeline</h3>
+                        </div>
+                        <p class="project-description">
+                            Production-ready ETL pipeline using AWS Glue with CloudFormation templates for infrastructure as code. Includes automated data transformation and loading workflows.
+                        </p>
+                        <div class="tech-tags mb-4">
+                            <span>Python</span>
+                            <span>AWS Glue</span>
+                            <span>CloudFormation</span>
+                            <span>ETL</span>
+                        </div>
+                        <a href="https://github.com/surajmalthumkar8/aws-glue-etl" target="_blank" class="project-link">
+                            <i class="fab fa-github mr-2"></i> View on GitHub
+                            <span class="ml-2 text-yellow-500"><i class="fas fa-star"></i> 1</span>
+                        </a>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-chart-line text-4xl text-green-600 mb-4"></i>
+                            <h3 class="project-title">DBT Analytics Pipeline</h3>
+                        </div>
+                        <p class="project-description">
+                            Data transformation pipeline using DBT (Data Build Tool) for analytics workflows, implementing best practices for data modeling and testing.
+                        </p>
+                        <div class="tech-tags mb-4">
+                            <span>DBT</span>
+                            <span>SQL</span>
+                            <span>Analytics</span>
+                        </div>
+                        <a href="https://github.com/surajmalthumkar8/DBT" target="_blank" class="project-link">
+                            <i class="fab fa-github mr-2"></i> View on GitHub
+                        </a>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-cloud-upload-alt text-4xl text-indigo-600 mb-4"></i>
+                            <h3 class="project-title">Information Management in AWS Cloud</h3>
+                        </div>
+                        <p class="project-description">
+                            Interactive web application built with Flask and Python that allows users to securely store and retrieve files in AWS cloud (EC2, S3) with user authentication.
+                        </p>
+                        <div class="tech-tags mb-4">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>AWS EC2</span>
+                            <span>AWS S3</span>
+                        </div>
+                        <div class="project-link-disabled">
+                            <i class="fas fa-code mr-2"></i> Production Project
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-dashboard text-4xl text-red-600 mb-4"></i>
+                            <h3 class="project-title">API Production Inventory Dashboard</h3>
+                        </div>
+                        <p class="project-description">
+                            Full-stack dashboard for managing API inventory with React JS frontend, Spring Boot backend, and Oracle DB integration. Features real-time monitoring and governance tools.
+                        </p>
+                        <div class="tech-tags mb-4">
+                            <span>React JS</span>
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>Oracle DB</span>
+                        </div>
+                        <div class="project-link-disabled">
+                            <i class="fas fa-code mr-2"></i> Enterprise Project
+                        </div>
+                    </div>
+
+                    <!-- Project 6 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fab fa-docker text-4xl text-blue-500 mb-4"></i>
+                            <h3 class="project-title">Docker Information Gathering System</h3>
+                        </div>
+                        <p class="project-description">
+                            Linux Docker image for secure server connections using key-based authentication, automated file transfers, and document processing with result delivery.
+                        </p>
+                        <div class="tech-tags mb-4">
+                            <span>Docker</span>
+                            <span>Bash</span>
+                            <span>Linux</span>
+                        </div>
+                        <div class="project-link-disabled">
+                            <i class="fas fa-code mr-2"></i> DevOps Project
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Testimonial 2 -->
-                <div class="bg-gray-100 rounded-lg p-6 shadow-lg">
-                    <div class="flex mb-4">
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
+                <!-- View More Projects -->
+                <div class="text-center mt-12">
+                    <a href="https://github.com/surajmalthumkar8?tab=repositories" target="_blank" class="cta-button-secondary">
+                        <i class="fab fa-github mr-2"></i> View All Projects on GitHub
+                        <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title">Education</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Master's Degree -->
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap text-4xl text-blue-600"></i>
+                        </div>
+                        <h3 class="education-degree">Master of Science</h3>
+                        <h4 class="education-major">Computer Science and Data Engineering</h4>
+                        <div class="education-school">Northeastern University</div>
+                        <div class="education-location">Boston, Massachusetts</div>
+                        <div class="education-date">September 2020 - August 2022</div>
+                        <div class="education-coursework">
+                            <strong>Coursework:</strong> Analysis of Algorithms, Database Systems, Web Technologies, Machine Learning for Data Science, Engineering Cloud Software Systems, Reinforcement Learning
+                        </div>
                     </div>
-                    <p class="text-gray-700 mb-4 italic">"The nutrition plan was easy to follow and the workouts were challenging but achievable. Best investment I've made!"</p>
-                    <div class="font-bold">- Mike Thompson</div>
-                    <div class="text-gray-600 text-sm">Gained 15 lbs of muscle with tranjeet, we did pach pach to weight loss</div>
+
+                    <!-- Bachelor's Degree -->
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <i class="fas fa-university text-4xl text-purple-600"></i>
+                        </div>
+                        <h3 class="education-degree">Bachelor of Engineering</h3>
+                        <h4 class="education-major">Electronics & Communication Engineering</h4>
+                        <div class="education-school">Indian Institute of Information Technology</div>
+                        <div class="education-location">Karnataka, India</div>
+                        <div class="education-date">August 2015 - May 2019</div>
+                        <div class="education-coursework">
+                            <strong>Focus:</strong> Signal Processing, Digital Communications, Embedded Systems, Computer Architecture
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Testimonial 3 -->
-                <div class="bg-gray-100 rounded-lg p-6 shadow-lg">
-                    <div class="flex mb-4">
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
+                <!-- Certifications -->
+                <div class="mt-12">
+                    <h3 class="text-2xl font-bold text-center mb-8">Certifications</h3>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <div class="certification-badge">
+                            <i class="fab fa-aws mr-2"></i> AWS Certified Developer
+                        </div>
+                        <div class="certification-badge">
+                            <i class="fab fa-python mr-2"></i> IBM Python for Data Science, AI & Development
+                        </div>
+                        <div class="certification-badge">
+                            <i class="fas fa-chart-bar mr-2"></i> Advanced Google Analytics
+                        </div>
                     </div>
-                    <p class="text-gray-700 mb-4 italic">"Tarnjeet's constant support and motivation outside gym kept me going even when I wanted to quit. Now I'm in the best shape of my life!"</p>
-                    <div class="font-bold">- Lisa Kim</div>
-                    <div class="text-gray-600 text-sm">Transformed to golden round ass with tarnjeet, he helped me to lose in 1 weeks</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-100">
+    <section id="contact" class="py-20 bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-12">Start Your Transformation</h2>
+            <h2 class="section-title text-white">Get In Touch</h2>
             <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
                 <!-- Contact Form -->
                 <div>
-                    <h3 class="text-2xl font-bold mb-6">Get in Touch</h3>
+                    <h3 class="text-2xl font-bold mb-6">Send Me a Message</h3>
                     <form id="contact-form" class="space-y-4">
                         <div>
-                            <label class="block text-gray-700 mb-2" for="name">Full Name *</label>
-                            <input type="text" id="name" name="name" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                            <label class="block text-gray-300 mb-2" for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-10 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white placeholder-gray-400">
                         </div>
-                        
+
                         <div>
-                            <label class="block text-gray-700 mb-2" for="email">Email Address *</label>
-                            <input type="email" id="email" name="email" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                            <label class="block text-gray-300 mb-2" for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-10 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white placeholder-gray-400">
                         </div>
-                        
+
                         <div>
-                            <label class="block text-gray-700 mb-2" for="phone">Phone Number *</label>
-                            <input type="tel" id="phone" name="phone" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                            <label class="block text-gray-300 mb-2" for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-10 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white placeholder-gray-400">
                         </div>
-                        
+
                         <div>
-                            <label class="block text-gray-700 mb-2" for="goal">Fitness Goal *</label>
-                            <select id="goal" name="goal" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
-                                <option value="">Select your goal</option>
-                                <option value="Weight Loss">Weight Loss</option>
-                                <option value="Muscle Gain">Muscle Gain</option>
-                                <option value="Body Recomposition">Body Recomposition</option>
-                                <option value="Athletic Performance">Athletic Performance</option>
-                                <option value="General Fitness">General Fitness</option>
+                            <label class="block text-gray-300 mb-2" for="subject">Subject *</label>
+                            <select id="subject" name="subject" required class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-10 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white">
+                                <option value="">Select a subject</option>
+                                <option value="Job Opportunity">Job Opportunity</option>
+                                <option value="Freelance Project">Freelance Project</option>
+                                <option value="Collaboration">Collaboration</option>
+                                <option value="Consultation">Consultation</option>
+                                <option value="General Inquiry">General Inquiry</option>
                             </select>
                         </div>
-                        
+
                         <div>
-                            <label class="block text-gray-700 mb-2" for="message">Message</label>
-                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+                            <label class="block text-gray-300 mb-2" for="message">Message *</label>
+                            <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-10 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white placeholder-gray-400"></textarea>
                         </div>
-                        
-                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition transform hover:scale-105">
-                            Send Message
+
+                        <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-4 px-6 rounded-lg transition transform hover:scale-105">
+                            Send Message <i class="fas fa-paper-plane ml-2"></i>
                         </button>
-                        
+
                         <div id="form-status" class="hidden mt-4 p-4 rounded-lg"></div>
                     </form>
                 </div>
-                
+
                 <!-- Calendly Widget -->
                 <div>
-                    <h3 class="text-2xl font-bold mb-6">Book a Free Consultation</h3>
-                    <div class="bg-white rounded-lg shadow-lg p-4">
+                    <h3 class="text-2xl font-bold mb-6">Schedule a Meeting</h3>
+                    <div class="bg-white rounded-lg shadow-2xl p-4">
                         <!-- Calendly inline widget begin -->
                         <div class="calendly-inline-widget" data-url="https://calendly.com/surajmalthumkar8/fitness-consultation" style="min-width:320px;height:630px;"></div>
                         <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
@@ -306,26 +615,55 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Contact Info -->
+            <div class="mt-16 max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div class="contact-info-card">
+                        <i class="fas fa-envelope text-4xl text-blue-400 mb-4"></i>
+                        <h4 class="text-lg font-bold mb-2">Email</h4>
+                        <a href="mailto:surajmalthumkar8@gmail.com" class="text-gray-300 hover:text-blue-400 transition">surajmalthumkar8@gmail.com</a>
+                    </div>
+                    <div class="contact-info-card">
+                        <i class="fas fa-phone text-4xl text-green-400 mb-4"></i>
+                        <h4 class="text-lg font-bold mb-2">Phone</h4>
+                        <a href="tel:9281458741" class="text-gray-300 hover:text-green-400 transition">+1 (928) 145-8741</a>
+                    </div>
+                    <div class="contact-info-card">
+                        <i class="fab fa-linkedin text-4xl text-blue-500 mb-4"></i>
+                        <h4 class="text-lg font-bold mb-2">LinkedIn</h4>
+                        <a href="https://www.linkedin.com/in/surajmalthumkar8" target="_blank" class="text-gray-300 hover:text-blue-400 transition">Connect with me</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-8">
+    <footer class="bg-gray-900 text-white py-12">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-4 md:mb-0">
-                    <h3 class="text-2xl font-bold">FitCoach</h3>
-                    <p class="text-gray-400">Transform your body, transform your life</p>
+                <div class="mb-6 md:mb-0 text-center md:text-left">
+                    <h3 class="text-3xl font-bold mb-2 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Suraj Malthumkar</h3>
+                    <p class="text-gray-400">Full Stack Cloud Engineer | AI & Data Science Specialist</p>
                 </div>
                 <div class="flex space-x-6">
-                    <a href="#" class="text-2xl hover:text-blue-400 transition"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="text-2xl hover:text-blue-400 transition"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="text-2xl hover:text-blue-400 transition"><i class="fab fa-youtube"></i></a>
-                    <a href="#" class="text-2xl hover:text-blue-400 transition"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/surajmalthumkar8" target="_blank" class="text-3xl hover:text-blue-400 transition transform hover:scale-110">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/surajmalthumkar8" target="_blank" class="text-3xl hover:text-blue-400 transition transform hover:scale-110">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:surajmalthumkar8@gmail.com" class="text-3xl hover:text-blue-400 transition transform hover:scale-110">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:9281458741" class="text-3xl hover:text-blue-400 transition transform hover:scale-110">
+                        <i class="fas fa-phone"></i>
+                    </a>
                 </div>
             </div>
-            <div class="mt-8 text-center text-gray-400">
-                <p>&copy; 2024 FitCoach. All rights reserved.</p>
+            <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
+                <p>&copy; 2025 Suraj Malthumkar. All rights reserved. Built with passion and code.</p>
             </div>
         </div>
     </footer>
